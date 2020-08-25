@@ -35,7 +35,7 @@ def create_app():
         return "Today’s news is ..."
 
     @app.route('/greeting')
-    def query():
+    def greeting():
         if request.args:
             name = request.args.get('name')
             return 'Sup, %s.' % escape(name), 200
